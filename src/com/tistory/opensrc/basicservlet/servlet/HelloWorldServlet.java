@@ -33,6 +33,8 @@ public class HelloWorldServlet extends HttpServlet {
 		PrintWriter out = response.getWriter(); // response로 부터 출력 장치를 확보
 
 		String yourName = request.getParameter("your_name"); // request에서 화면으로 부터 넘어온 파라메터의 값을 추출 합니다. 
+
+		System.out.println("yourName : " + yourName);
 		
 		// html 내용을 출력
 		out.println("<html>");
@@ -55,7 +57,9 @@ public class HelloWorldServlet extends HttpServlet {
 		response.setContentType("text/html"); // text html 형태로 출력 하겠다고 지정함
 		PrintWriter out = response.getWriter(); // response로 부터 출력 장치를 확보
 		
-		String yourName = request.getParameter("your_name"); // request에서 화면으로 부터 넘어온 파라메터의 값을 추출 합니다. 
+		String yourName = request.getParameter("your_name"); // request에서 화면으로 부터 넘어온 파라메터의 값을 추출 합니다.
+		
+		System.out.println("yourName : " + yourName);
 		
 		// html 내용을 출력
 		out.println("<html>");

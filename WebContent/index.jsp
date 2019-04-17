@@ -7,9 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-hello, world</br>
+hello, world<br/>
 <form action="/hello" method="POST">
-	What is your name ? <input type="text" name="your_name"/><br/>
+	당신의 이름은 ? <input type="text" name="your_name"/><br/>
 	<input type="submit" value="Submit"/>
 </form>
 </body>
